@@ -8,7 +8,3 @@ app.config.from_object('config')
 app.config.from_pyfile('./instance/config.py')
 
 app.register_blueprint(hotelapi)
-
-@app.route('/')
-def home():
-    return 'Home'
